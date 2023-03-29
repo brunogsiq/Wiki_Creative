@@ -1,0 +1,1164 @@
+Etapas do processo de criação de um software:
+Comunica → Planeja → Projeta/Modela → Executa/constrói → Entrega
+
+***************************************************************************************_Atualizado em 07/11/22 - Cap12.12
+
+1 - Introdução e História dos testes.
+O primeiro bug surgiu em 1947, no desenvolvimento do primeiro computador.
+Dijkstra diz: “O teste mostra a presença e não a ausência de erros.” em uma conferência da OTAN, em 1969.
+20 de fevereiro é considerado o dia do Q.A, pois o Glenford Myers apresentou conceitos inovadores sobre a atividade de teste de software para a época, inclusive foi o mesmo que disse que: “Quanto maior o tempo para encontrar um bug, consequentemente o preço de correção é proporcionalmente superior”.
+
+
+1. 1 - Quando iniciar o processo de teste.
+O teste de software deve ser realizado a partir do princípio das especificações dos requisitos, quando o Product Owner começar a trabalhar, que deverá ser em conjunto com o Quality Assurance, lembrando que prevenir bugs é mais importante que encontrá-los, aliás, este é o foco.
+Lembrar sempre que as técnicas serão necessárias para testar com a maior qualidade, e não apenas executá-los.
+Falando de negócios, assim, são as técnicas de BDD, conhecido como behavior driven development, critérios de aceite, regras de negócio, planejamento, entregas, prazos e amor pelo produto.
+A origem de tudo, ou seja, tudo se inicia a partir dos requisitos de um software, assim, os requisitos não terminam no seu desenvolvimento, este tem um ciclo até a etapa de entrega.
+Assim, alguém tem uma necessidade, é a partir desta necessidade que surge o princípio de tudo.
+Depois de levantado os requisitos, é preciso analisar, estruturar, dar respostas e soluções sistêmicas para estes requisitos.
+Consequentemente serão obedecidos os ciclos:
+Requisitos;
+Especificação funcional (Requisitos funcionais) e Especificação técnica (Requisito não funcional);
+Caso de uso;
+Autor;
+Pré- condição;
+Fluxo básico;
+Fluxo alternativo;
+Fluxo exceção;
+
+
+
+
+
+
+1.2 -  Analista de Qualidade e Teste de Software, quem somos?
+O que é qualidade de software:
+Qualidade é uma cultura, a filosofia, que uma teoria seja sustentada, e não se aplica qualidade, caso a cultura não exista. As pessoas não aplicam caso a importância da coisa não possua credibilidade.
+O Processo de qualidade possui 3 pilares, o Humano, o Negócio e o Tecnológico.
+Pilar Humano: 
+A primeira coisa a se fazer é convencer as pessoas, que é possível fazer melhor.
+Pilar Negócio: 
+Preciso conhecer o meu produto para eu contribuir para melhoria dele, para melhorar o fluxo, a usabilidade, colaboração com cliente maior que a negociação do contrato.
+Pilar Tecnológico: 
+Escolher a tecnologia e como aplicá-la se torna essencial, pois a implantação tem que ser escalável e de fácil manutenção; 
+Para que as mudanças sejam atendidas de maneira rápida e eficiente e com o menor impacto possível. Responder às mudanças mais que seguir planos. Software em funcionamento mais que documentação abrangente.
+
+1.3 - Conceito de Shift- Left
+A prevenção de defeitos difere-se da detecção e rejeição, assim, caminhamos mais a esquerda, ou seja, ao invés de iniciar os testes a partir das entregas, a qualidade passa a ganhar vida desde do início do planejamento, concepção do software.
+
+
+
+2 - Ser Q.A: 
+É o ato de investigar um sistema, em busca de mensurar sua qualidade utilizando técnicas com o intuito de manuseá-lo de forma investigativa, e se possível, prevenir e encontrar bugs e sugerir melhorias.
+O Q.A. 3.0 poderá assim, além de ser a referência e evangelizar a qualidade, indicar ferramentas, sugerir melhorias, implantar melhorias, disseminar a cultura ágil e a cultura de qualidade
+É importante verificar a skill para a área de qualidade, assim, lista-se três delas para o Q.A. 3.0, assim: 
+Conhecer sobre Desenvolvimento, ao menos a lógica, 
+Para a área de Negócios, para poder ser um braço direito do P.O,
+Para a área de Devops para que seja prosseguido com a entrega contínua (Continuous Integration),
+
+
+2.1 - Garantir a qualidade, do quê? 
+Daquilo que estou fazendo, mas vai além disto, é uma cultura, e assim, cultura é um processo, ou seja, ninguém executa algo em que elas não acreditam mesmo que tenham os melhores profissionais.
+É necessário enxergar o valor da ação para mudar o ambiente no qual se sobrevive, trabalha e assim gerar qualidade.
+Seja o primeiro a fazer a mudança, a tornar o convívio, o ambiente, o processo, mais satisfatório.
+No contexto de desenvolvimento de software, é um conjunto de características a serem satisfeitas, de modo que o produto atenda às necessidades de seus usuários.
+Qualidade do produto + Qualidade do serviço percebido + Justiça no  Preço = 
+Satisfação do cliente =
+Lealdade do cliente.
+ 
+3 - Atividades do QA: 
+Testes, Debug e Logs, Pequenas Implementações com “Pair Programing”, Gestão de bugs.
+
+4 - Um sistema de qualidade deve possuir ou passar boa impressão nos quesitos:
+Funcionalidade; Usabilidade; Performance; Portabilidade; Segurança; Confiabilidade; Operacionalidade; Manutenibilidade; Continuidade. 
+
+
+5 - O que é teste de software?
+Fica o questionamento, Não é documentação, podemos deixar claro desde já, é aquilo que você pensa e faz a partir de técnicas específicas de execução, com foco em processos e produtos.
+Os mesmos são bem estruturados, ordenados, planejados, com início, meio e fim.
+O foco não é encontrar defeitos, mas sim prevenir, porém, se for para encontrá-los, que seja o quanto antes para que sejam corrigidos o quanto antes para que seja menos oneroso.
+É uma maneira de avaliar a qualidade com intuito de reduzir o risco de falhas na operação.
+É um processo que inclui inúmeras atividades como:
+planejamento de teste;
+Análise, modelagem e implementação dos testes;
+Relatórios de progresso e resultados de testes;
+Avaliação da qualidade de um objeto de teste;
+Alguns testes envolvem a execução de um componente ou sistema que está sendo testado, sendo esse teste chamado de teste dinâmico. 
+Enquanto outros testes não envolvem a execução do componente ou sistema que está sendo testado, sendo chamados de teste estático. 
+Os testes também incluem a revisão de produtos de trabalho, como requisitos, histórias de usuários e código-fonte
+São organizados e executados de forma diferente de acordo com o ciclo de vida.
+Verificar se o comportamento de um determinado objeto está de acordo com o esperado, considerando o estímulo que foi dado para seu funcionamento ou não, em outras palavras, verificar se a ação impulsionada corresponde a ação executada.
+
+
+5.1 - Objetivo da qualidade de software:
+Tem como principal objetivo garantir que um determinado produto ao final satisfaça as expectativas do cliente dentro daquilo que foi acordado.
+Prevenindo que todo processo seja entregue com o melhor entendimento e qualidade possível.
+Não deve ser compreendida como perfeição;
+Como a qualidade pode ser mensurada?
+Para isto é necessário decompor o processo em atributos. Poderão ser subdivididos em :
+Usabilidade, extensibilidade, escalabilidade, capacidade de manutenção, reutilização, testabilidade, confiabilidade, segurança, desempenho e dentro outros.
+A qualidade deve ser preventiva, lembre-se!!!
+O teste tem como principal foco, obter a visão do usuário, ou seja, como era esperado pelo usuário.
+Garantir que tudo que foi desenvolvido pela equipe de Dev´s está conforme os requisitos especificados.
+Garante também as premissas do negócio, obtendo certeza que o fluxo do negócio está sendo obedecido.
+
+
+
+
+
+5.2 - Objetivos do teste
+Encontrar e prevenir defeitos;
+Gerar confiança sobre o nível de qualidade;
+Prover informações para tomadas de decisões;
+
+
+5.3 - Quais são os três pontos importantes da qualidade de software?
+Transição do Produto:
+Portabilidade:
+Reutilização:
+Interoperabilidade:
+Revisão do Produto:
+Manutenção:
+Flexibilidade:
+Testabilidade:
+Operação do Produto:
+Correção:
+Confiabilidade:
+Usabilidade:
+Integridade:
+Eficiência:
+
+6 - O que é Quality Assurance e Para que serve, e para que servem os Profissionais
+A qualidade é um conjunto de características a serem satisfeitas, de modo que o produto atenda às expectativas e necessidades do usuário; 
+Em um time ágil, o Q.A., tem a necessidade de ser generalista, olhar o sistema como um todo, sempre pensando em qualidade para que seja minimizado os custos, tempo, e efeitos indesejados.
+
+
+7 - Papel do Q.A. na metodologia ágil:
+Testar em partes, ainda durante o desenvolvimento;
+Prevenir bugs;
+Testar o entendimento, se atende os requisitos, mas principalmente se atende o desejo do Usuário, não somente a funcionalidades;
+Construção de um sistema melhor.
+
+
+8 - Responsabilidades gerais do Q.A;
+planejamento e controle;
+Escolha das condições de teste;
+Modelagem dos casos de teste;
+Checagem dos resultados;
+Avaliação de conclusão dos testes;
+Geração de relatórios; 
+Revisão dos documentos.
+
+8.1 - Quais as boas práticas vocês utilizam para garantir qualidade de software?
+Os processos devem possuir garantias, assim, é de extrema importância que exista um processo que garanta que cada etapa do desenvolvimento passe por  uma validação.
+Conceito de Shift Left Right Testing
+Cada etapa de um processo deve ser testada e validada.
+O objetivo deste é prevenir erros ou identificar impedimentos que possam surgir durantes as fases da entrega,
+Boas práticas podem ser seguidas para assegurar a qualidade:
+Documentação de requisitos,
+Correção do código produzido,
+Testes unitários (TDD),
+Code reviews,
+Análise de estatísticas,
+Sistema de builds / Integração contínua (CI/CD),
+Testes funcionais
+Plano de testes (BDD),
+Testes automatizados
+Testes de carga, Testes de performance.
+
+Nesta figura temos a versão de entrega mais técnica de um processo de entrega contínua utilizando plataforma de gerenciamento de projetos, como o Devops, lembrando que em cada etapa deve existir um processo que garanta a qualidade. 
+
+
+
+
+
+
+
+
+
+8.2 - Manual da Qualidade:
+Deve estar em conformidade com especificações e padrões de desenvolvimento. Há necessidades explícitas e objetivos propostos.
+Conceito de Qualidade de Software:
+É uma forma de prevenir erros ou falhas no desenvolvimento de produtos;
+A prevenção de defeitos em si, se difere da detecção e rejeição de defeitos.
+Mudança para a esquerda, conhecida como Shift Left, pois é focada na qualidade desde o início do processo.
+A importância da qualidade de software passou a ganhar maior importância ao final da década de 80.
+Assim, conhecida como a Era da Qualidade, a década de 90 como ficou conhecida na área de tecnologia, com a crescente exigência da qualidade, para suprir a demandas dos clientes.
+Existem diversos conceitos sobre qualidade, vejamos alguns a partir do pensamento de diversas personalidades da área.:
+A qualidade pode ser mensurada a partir do grau de satisfação das necessidades dos clientes sob todos os aspectos do produto.
+É a conformidade a requisitos funcionais e de desempenho que foram explicitamente declarados, a padrões de desenvolvimento claramente documentados e a características implícitas que são esperadas do software desenvolvido por profissionais.
+Qualidade é a totalidade de características de uma entidade, que lhe confere a capacidade de satisfazer necessidades explícitas e implícitas
+Existe uma visão gerencial de projeto, onde o pensamento é, coube dentro do orçamento e está dentro do prazo, o software possui qualidade.
+Por fim, de um modo geral, a Qualidade de software pode ser definida como:
+Um conjunto de atributos que devem ser satisfeitos de modo que o software atenda às necessidades do usuário, onde a determinação dos atributos relevantes para cada software varia em função do: domínio, tecnologia utilizadas, características do projeto, necessidades do usuário e da organização.
+Lembramos que a qualidade possui visões diferentes, então, dependendo de quem avaliar, haverá formas diferentes de ser mensurado.
+Usuário: avaliará sem conhecer aspectos internos, interessado apenas na facilidade de uso, desempenho, confiabilidade, preço, características mais voltadas ao processo final.
+Desenvolvedores: avaliar aspectos de conformidade em relação aos requisitos dos clientes e também aspectos internos do sistema.
+Corporação: Avalia aspectos de conformidade em relação aos requisitos dos clientes e desenvolvedores e também aspectos de custo do cronograma.
+Qualidade de Produto:
+profundamente afetada pela qualidade do processo de desenvolvimento.
+Assim, um produto de software compreende os programas e procedimentos de computador, a documentação e dados associados, que foram projetados para serem liberados para o usuário.
+Lembramos que há visões diferentes também para o que é qualidade de produto, assim, é levado em conta:
+Boa fabricação, durabilidade de utilização, desempenho, adaptável às necessidades, fácil utilização, entre outros detalhes.
+Qualidade de Processos de Software
+Processos no geral:
+Aproveitando, falamos diversas vezes de processo, então, vejamos algumas explicações e visões sobre o que é processo.
+Maneira pela qual se realiza uma operação, seguindo determinadas normas.
+Sequência de passos realizados para alcançar um dado propósito.
+Integra e interage pessoas, ferramentas e procedimentos.
+Utilizando métodos, ferramentas e equipamentos, através de procedimentos, para transformar matéria prima em um produto final agregando valor ao mesmo.
+Processos de software:
+Conjunto de atividade, métodos, práticas e transformações que as pessoas usam para desenvolver e manter o software e os produtos associados.
+Envolvidos por um conjunto de elementos, como objetivos organizacionais, políticas, pessoas, comprometimento, ferramentas, métodos, atividades de apoio e as tarefas da engenharia de software, e para que o processo seja eficiente, deve ser constantemente avaliado, medido e controlado.
+Fatores de Qualidade de Software:
+Onde o usuário interage, chamado de qualidade externa.
+Correção
+Robustez
+Mesmo submetido a condições anormais, realiza suas tarefas.
+Extensibilidade
+Facilidade em adaptar inclusões e alterações de requisitos.
+Reusabilidade
+Reutilização em parte ou todo por outros software.
+Compatibilidade:
+Eficiência
+Portabilidade
+Verificabilidade
+Integridade
+Habilidade em proteger dados não autorizados e manter sua segurança.
+Usabilidade
+Facilidade de se utilizar em diferentes ambientes de hardware.
+Onde o desenvolvedor interage, chamado de qualidade interna.
+Modularidade
+Capacidade do software ser construído por unidades denominadas de módulos.
+Legibilidade
+Manutenibilidade
+Capacidade de realizar manutenção.
+Métricas de Qualidade de Software:
+Lembre-se que não se pode gerenciar o que não se pode medir.
+Se não sabe para onde ir, qualquer caminho servirá, e se não sabe onde está, um mapa não irá ajudar.
+Assim, definimos que métrica é a medição de um atributo de uma determinada entidade, entre estão, esforço, tempo, custo, grau de satisfação, entre outras diversas.
+As métricas podem ser subdivididas em:
+Diretas
+Custo, esforço, linhas de código, capacidade de memória e etc
+Indiretas
+Complexidade, eficiência, confiabilidade, e facilidade de manutenção.
+Orientadas a tamanho
+Medidas diretas do tamanho dos artefatos de software associados aos processos por meio do qual o software é desenvolvido.
+Orientadas por função
+Do ponto de vista do usuário, determinado de forma consistente o tamanho e a complexidade do software.
+De produtividade
+Concentra-se na saída de processos de engenharia de software.
+De qualidade
+Oferecem uma indicação de quanto o software se adequa às exigências. 
+Técnicas
+Características de software não utilizadas no processo por meio do qual o software foi desenvolvido.
+Revisões de Software:
+Cabe ao Engenheiro de software planejar o que deve ser revisado, resultados esperados, quem deverá fazer a revisão, determinar os checkpoints.
+Para o planejamento das revisões é importante determinar quem participa, quais informações são requeridas antes da revisão, quais pré-condições que devem ser satisfeitas antes que a revisão possa ser conduzida, como organizar
+Gerar registros e documentos que deverão ser produzidos
+As revisões é a forma mais confiável de avaliar o progresso do desenvolvimento, traz vários benefícios para o bom desenvolvimento do software.
+Assim, realizando revisões dos processos, podemos chegar a conclusão, que a entrega de um produto pode ter seu custo reduzido até 100 vezes caso seja visto apenas ao final.
+Uma teoria bastante interessante é que, é melhor ter uma revisão de má qualidade, que sequer ter uma.
+
+9 - Artefatos de Teste:
+Artefatos:
+Produto de Trabalho que fornece uma descrição e definição para produtos de trabalho tangíveis e incomuns.
+Podem ser compostos de outros artefatos.
+Geralmente não são documentos, embora muitos métodos tenham foco nisso.
+A abordagem mais prática é mantê-los dentro da ferramenta apropriada para criar e gerenciá-los.
+São subprodutos gerados ou criados durante a execução de testes de software. 
+Exemplos de Artefatos:
+Uma especificação de caso de uso;
+Um modelo de design; 
+Um plano de projeto;
+Um defeito registrado;
+Geralmente é um conjunto de documentos que o analista de teste obtém durante o STLC (Ciclo de vida do teste de software).
+São subprodutos gerados ou criados durante a execução do teste de software, podendo ser inclusive compartilhados com o cliente, equipe, líderes, e a quem mais interessar se necessário.
+Entre suas diversas finalidades estão:
+Enumerar um número adequado de testes específicos para garantir a abrangência da avaliação.
+Identificar e considerar scripts de teste e geradores de forma manual e automatizada,
+Fornecer um esquema para a implementação do scripts de testes e geradores, fornecendo uma descrição dos pontos-chave de observação e controle e qualquer pós ou pré-condição
+
+
+10 - Os artefatos podem se e o que são:
+Análise de Requisito: 
+Iniciando um projeto a partir da necessidade do cliente.
+A área de negócios de levantamento de requisitos.
+É estabelecido as regras de negócios para que o desenvolvimento e a área de QA exercerem suas funções.
+O Q.A. poderá ser o braço direito da área de negócios, ganhando destaque.
+Downstream, é tudo que está interligado a engenharia da criação do sistema a ser criado.
+O mapeamento dos requisitos poderão ser realizados de diversas formas, como reuniões com o cliente, protótipos de tela, mapeamento de fluxos, documentação.
+Serão realizadas o mapeamento de prioridades pela área de negócios para o desenvolvimento que irão criterizar as funcionalidades.
+Podemos ter auxílio de ferramentas que podem ajudar a gerir e gerar artefatos como:
+O figma, é uma ferramenta de designer poderosa, que servirá para realização de protótipos de tela, designer,
+O Gherkin será utilizado para a construção dos requisitos e lembre-se que não é BDD
+Devido ao suporte para outras linguagens, pode também ser utilizado para automação de testes e a facilidade da utilização da keywords torna mais fácil a leitura.
+Features [ funcionalidades ]: 
+Pré teste, o que deve ser validado de acordo com a funcionalidade;
+
+User story, se possível estrutura Gherkin:
+Como   		   - Persona, Alguém, Usuário
+Quero, Preciso, Desejo - A ser realizado, o que deve acontecer
+Porque, Para 		   - Objetivo
+
+
+Regras de negócio
+São ações das minhas necessidades.
+Especificações das necessidades.
+Como quero/deve funcionar as necessidades.
+
+
+Após serão escritos os cenários de teste, baseados nos critérios de aceite
+Cenário 01 - Tela de Login;
+Cenário 02 - Tela de Cadastro;
+
+Critérios de aceite, descrição do que a funcionalidade deve conter para estar ok
+Poderão haver mais de um critério de aceite;
+Necessidades.
+É o que eu preciso que tenha/exista/faça.
+Given [Dado]      - Pré requisitos do desejo;
+And [E]               - Pré requisito, necessidades da ação;
+When [Quando] - Contexto da ação, Realização;
+Then [Então]      - Resultado esperado;
+
+10.1 - O que o Q.A. fará com tudo isso?
+Lê a documentação e realiza as funções para o plano de teste; 
+Entre outras diversas, não analisa a tecnologia, mas sim as regras para que seja desenvolvido.
+
+10.2 - Estratégia de Teste?
+Explica como o teste deve acontecer; 
+É o planejamento de teste
+Etapa onde é definida a melhor forma para a execução dos testes
+Quais passos deverão ser seguidos para que os testes sejam realizados de maneira eficiente.
+Será neste momento que definiremos os cenários, ambiente, se haverá ou não massa de dados, se há impedimentos, se serão realizados de forma manual ou automatizada.
+Fornece um conjunto de diretrizes sobre como determinar o escopo, os formatos de documentação, o processo de teste e a estratégia de comunicação com o cliente; 
+Deve ser padrão em todo o processo.
+Para que as atividades possam ter início, é necessário entender a demanda, haver um alinhamento, compreender necessidades e restrições para que ao serem esclarecidas, as atividades de testes possam ter início e obter sucesso.
+Entender a demanda significa:
+Objetivos do teste?
+Escopo?
+Ambiente?
+Responsável pela criação do ambiente?
+Massas de teste?
+Como será tratada a massa de teste?
+Quais documentos existem?
+Como é o esclarecimento sobre o sistema?
+Quantos ciclos de testes haverão?
+Quais serão as ferramentas utilizadas?
+Como conduzir a o entendimento da demanda?
+Preparar a entrevista de compreensão
+Identificar participantes
+Definir pauta
+Entender o projeto, objetivo, status, plano, metodologia, requisitos, riscos
+Após, resumir informações e confirmar os dados.
+
+Estratégia de teste, é realizada a partir da definição de abordagem, tipo de teste, ferramentas, perfis.
+Entendimento do sistema, para haver a modelagem dos testes, ou seja, seus fluxos, requisitos, regras de negócio, funcionalidades, casos de uso, navegação
+
+
+10.3 - Plano de Teste: 
+É o documento de planejamento do projeto de teste; 
+Documento detalhado que descreve o escopo do teste, a estratégia, entregas de riscos e objetivos.
+São definidos todos os cenários de teste da funcionalidade, seja funcional ou não funcional.
+É equivalente ao Plano de Projeto definido pelo PMI (Project Management Institute);
+Documento detalhado que descreve o escopo de teste de software, estratégia de teste, entregas de teste, risco, objetivos e atividades. 
+É uma abordagem sistêmica geralmente usada para testes de aplicativos de software. 
+É a atividade mais importante e essencial, simplesmente garantir que haja inicialmente uma lista de tarefas e marcos no plano de linha de base para rastrear ou identificar o progresso do projeto.
+Um bom plano de teste deverá conter alguns itens descritos abaixo: 
+Escopo de teste: Devemos definir o que será feito para atribuirmos as responsabilidades dentro do projeto, deve ser descrito em uma tabela, servindo para alinhamento junto ao time documentando o que estará e não estará dentro de nossa área de testes.
+Explicará quais tipos de testes ficarão de fora ou não serão de responsabilidade da Equipe de Q.A., 
+Quais níveis de testes serão executados e de quem é a responsabilidade
+Define, comunica a intenção e o esforço desse teste. 
+O teste deve ser planejado e avaliado, ver suas métricas;
+Ambientes e Ferramentas: 
+Serão definidas as ferramentas e os ambientes, caso haja ferramentas que sejam pagas, para dar andamento no acesso entre outras especificações de como serão realizados os testes.
+Algumas ferramentas para auxílio dos testes são: o Jira, o Mantis, o Bugzilla, entre outras há diversas.
+Estimativa de testes: Baseado na complexidade, devemos levar em conta algumas situações:
+Tamanho do produto, Complexidade do software, Detalhes para documentação.
+
+
+
+Abaixo o fluxo básico do planejamento e teste de software
+
+Modelagem de teste.
+
+
+Níveis de teste.
+
+Ferramentas de teste.
+As ferramentas de teste servirão para auxiliar o Q.A. a realizar mais rapidamente e com maior precisão alguns tipos de testes, por isso é importante estudá-las.
+
+10.4 - Cenário de Testes: 
+São registrados as diferentes condições de acordo com as técnicas definidas no documento de estratégia. Possíveis variações e necessárias para cobrir um requisito.
+Descrição da funcionalidade a ser testada, assim, garantindo que o teste quando realizado esteja de acordo com as especificações.
+Aquilo que precisa testar, o que deve ser testado visualizado de forma mais macro;
+Pacote de casos de teste relacionados. 
+Por exemplo: Suíte de cadastro, suíte de consulta.
+Declaração usada para descrever a funcionalidade do aplicativo que pode ser testado. 
+Usado simplesmente para garantir que o teste de ponta a ponta do recurso ou software esteja funcionando bem ou não. É derivado dos casos de uso.
+Também é chamado de Condição de Teste ou Possibilidade de Teste.
+Vários casos de testes podem estar dentro de um cenário de teste.
+Executar uma determinada funcionalidade do sistema dentro de um determinado contexto.
+O que deve ser executado/Testado
+Ex: Cadastro de Produto
+
+10.5 - Caso de Teste: 
+Um caso de teste deve ser completo em si, não deve depender de nenhum outro caso para que possa ser executado ou para que seu resultado possa ser aferido, e deve respeitar o escopo, assim, ser o mais simples possível em termo de abrangência e não testar mais de uma funcionalidade
+Documento detalhada que descreve os casos que ajudarão na execução durante o teste, assim, o mesmo deverá obter:
+Pré condição, etapas, condição de entrada e resultado esperado.
+É uma descrição de um teste a ser executado. 
+Um ou mais casos de teste costumam estar relacionados a um caso de uso / cenário de teste.
+É simplesmente um conjunto de condições ou variáveis ​​sob as quais o testador de software identifica se o sistema sob teste satisfaz ou não os requisitos
+Se funciona de maneira adequada e correta.
+Composto de: 
+Definição de entrada: Pré Condição;
+O que acontecerá: Etapas e resultados esperados;
+Saída: Pós condições.
+Foram criados inicialmente para contribuir em um contexto onde há alguém que define o que testar e ajudar a controlar a previsibilidade dos testes;
+É um nome exclusivo para identificar esse caso de teste, e define-se pelo como iremos fazer para testar, o passo a passo; 
+Um conjunto de valores de entrada, pré-condições de execução, resultados esperados e pós condições de execução, desenvolvido para um objetivo particular ou condição de teste. 
+É uma situação específica onde você envia informações para o sistema e analisa se o mesmo se comportou como deveria, ou seja, Se isso, Faça Aquilo:
+Boas práticas de criação de casos de teste:
+Não crie testes dependentes de outros
+Crie casos diretos, sucintos e objetivos
+Siga o template de documentação
+Não crie casos baseados em suposições
+Crie casos de teste com base em técnicas de design
+Para documentar um caso de teste é necessário possuir:
+Documento, Id, Título, Pré condição de execução, Valores de entrada, Resultado Esperado, Pós condições de execução.
+Houve uma adaptação das ferramentas de gestão de teste, inspirado em normas como a ISO-29119-3:
+Um bom caso de teste de conter os seguinte um dos dois casos abaixo:
+
+
+
+10.5.1 Mais detalhes sobre Casos de Testes e do que é composto:
+Pré Condições: 
+Indica o estado do sistema para executar o caso de teste;
+Procedimentos: 
+Passo a passo para execução e alcançar um resultado esperado;
+Resultado Esperado: 
+O que se espera que aconteça depois que termina o passo a passo;
+Dados de entrada: 
+Dados necessários para executar uma ação do sistema;
+Ambiente: 
+Onde deve ser executado este caso de teste;
+Implementação: 
+Manual ou automatizado;
+Iteração: 
+Número de iteração
+	
+10.6 - Dados de Teste:
+Contém dados positivos e negativos para realizar testes positivos/negativos. 
+
+
+10.7 - Matriz de Rastreabilidade de Requisitos:
+É um documento que garante que cada requisito tenha um caso de teste. 
+Escrevemos os casos de teste tomando os requisitos como base e, em seguida, executamos esses casos de teste. 
+Se escrevermos os casos de teste independentemente do ambiente de teste, não poderemos testar recursos específicos que possam ter alguns bugs associados.
+Para garantir que cobrimos todos os requisitos, escrevemos a matriz de rastreabilidade
+Documento que relaciona requisitos e casos de teste.
+
+
+10.8 - Roteiro de Testes:
+Para atingir o objetivo de cada caso de teste, escrevemos um script de teste.
+Um script de teste está escrevendo um conjunto de etapas cronológicas para validar um caso de teste.
+
+
+10.9 - Registro de Teste:
+Depois de executar o caso de teste, temos que relatar no documento Test Log. 
+Consiste no percentual de critérios de aprovação do caso de teste e no percentual de critérios de reprovação do caso de teste. 
+Test Log é um repositório para armazenar casos de teste de aprovação e reprovação.
+Evidenciando testes, podemos realizar capturando tela, podemos utilizar a ferramenta gravador de passos do windows, pode ser gravado um vídeo, o importante é evidenciar o erro, ou problema.
+
+
+10.10 - Relatório de Defeitos:
+Relatório de defeitos para declarar o problema da forma mais clara possível para que os desenvolvedores possam replicar o defeito facilmente e corrigi-lo. 
+Contém o nome do produto, o ID do teste, a versão de lançamento do projeto, o resumo, os resultados, as observações, a gravidade do defeito, a prioridade do defeito, etc. 
+
+
+10.11 - Relatório de Encerramento de Testes:
+Este é o documento final em artefatos de teste. 
+Fornece uma versão consolidada do ciclo de vida de teste de software.
+Relatório sobre as atividades de teste. 
+Os critérios de entrada nesta fase são relatório de execução de casos de teste, relatórios de defeitos de teste abertos e fechados. 
+Os critérios de saída são os relatórios de encerramento de teste assinados pelo cliente e as métricas de teste.
+
+
+10.12 - Relatório de teste de software.
+Documento que descreve todas as atividades de teste, fornecendo informações detalhadas sobre o status dos casos de testes, suítes de teste e scripts. 
+Este tem o intuito de representar a formalidade dos testes, e ainda pode ajudar na análise dos resultados e corrigi-los.
+
+
+10.13 - Estória de usuário (User Story).
+ Descreve o recurso que poderá, deve ser desenvolvido em uma única iteração.
+Geralmente escritos na perspectiva de usuário.
+Utilizando a técnica de Gherkin (Como, Quero, Para), deverão ser descritos os critérios de aceite, a funcionalidade, as regras de negócio e os requisitos não funcionais.
+
+
+10.15 - Massa de dados.
+Uma massa de dados eficiente garante testes autônomos, fazendo com que os testes sejam funcionais e 100% automatizados e eficazes dentro da pipeline.
+
+
+
+
+
+10.15 - Script de Teste: É uma automação da execução de um caso de teste.
+Básico do Fluxo:
+ Plano de Teste
+Ciclo de Teste
+Versão de Software
+Ambiente de Teste
+Leitura dos Requisitos
+Levantamento de Dúvidas
+Caso de Teste
+Massa de Dados
+Passos da Execução
+Resultado Esperado
+
+
+
+11 - Boas Práticas de Teste
+Não Técnicas
+Preferencialmente que seja um especialista em Testes, ou seja, não deve fazer parte da codificação.
+As especificações serão a base para os cenários de teste, então, aquilo que não foi especificado, não serão validados
+Técnicas
+Não se limite aos cenários registrados.
+Detalhe ao máximo caso encontre uma falha.
+Busque padrão, o erro/falha é pontual, ou acontece em outros sistemas.
+Teste sempre os valores limites, ou seja, testar os intervalos da regra.
+
+
+
+
+12 - Teste de Caixa Branca ou Caixa Preta (O que testar?):
+Caixa Branca
+Estrutural, tende a revelar erros que ocorrem durante a codificação do programa;
+Baseado na operação interna de um aplicativo e é sobre testes internos.
+O termo “whitebox” é usado por causa do conceito da caixa transparente, simboliza a capacidade de percorrer a camada externa do software (ou “quadro”) em relação à operação interna.
+
+
+Benefícios do teste White Box
+Otimização de código ao encontrar erros ocultos.
+Também podemos automatizar facilmente os casos de teste para a caixa branca.
+O teste é mais completo, porque geralmente verificamos todos os caminhos de código.
+Os testes podem começar no início do projeto, mesmo que a GUI não esteja disponível.
+
+
+Desvantagens do teste White Box
+O teste da caixa branca pode ser complexo e dispendioso.
+Os desenvolvedores que geralmente executam casos de teste para caixas brancas o detestam. 
+Os desenvolvedores, portanto, não testam a caixa branca em detalhes, o que pode levar a erros de produção.
+Além disso, o teste de caixa branca requer ferramentas profissionais e conhecimento profundo de programação e implementação.
+Teste de caixa branca é demorado, leva tempo para testar maiores aplicações
+
+
+Alguns Testes de caixa branca:
+Funcionais
+Unidade:
+Testa a menor unidade de um código, uma classe;
+Integração:
+Teste a integração entre componentes de um código ou sistemas;
+Sistema:
+Testa o sistema como um todo para avaliar se tudo está sendo atendido.
+Operação:
+Em um contexto produtivo, a aplicação  será testada.
+Positivo-Negativo:
+Testa sobre o contexto mapeado positivamente e negativamente, criando cenários a partir disto para gerar falhas;
+Regressão:
+Realizar os testes novamente para que tenha certeza que após uma modificação, as funcionalidades que funcionavam continuam corretas.
+Usabilidade
+O quanto o sistema é simples e intuitivo quanto a sua utilização, e o layout, informações, botões entre outras possíveis situações podem estar de forma compreensível e facilitada.
+Aceitação:
+Realizado pelo representante do usuário quanto ao ponto de vista das regras de negócio.
+
+Caixa Preta
+Funcional, garante o cumprimento dos requisitos pelo sistema;
+Enquanto está sendo realizado o teste visualizamos juntos o código, também podemos dizer que são os testes Funcionais.
+É o que está sendo testado de uma perspectiva externa ou do usuário final.
+O nome ‘black box’ simboliza que não podemos ver o funcionamento interno do software, portanto, só podemos testar a experiência do usuário final.
+
+Alguns Testes de Caixa Preta:
+Testes de caixa preta:
+Não Funcionais:
+Confiabilidade
+maturidade, tolerância a falhas, capacidade de recuperação;
+Usabilidade
+compreensão, aprendizagem, operação e atratividade;
+Eficiência
+comportamento temporal, utilização de recursos,
+Manutenabilidade
+facilidade de análise, possibilidade de efetuar mudanças, estabilidade, testabilidade.
+Portabilidade
+Adaptabilidade, instabilidade, coexistência, substituição.
+Performance:
+Velocidade;
+Carga:
+Volume:
+Carga de maneira gradativa;
+Stress:	
+Travamento;
+Segurança:
+Ataques e vulnerabilidades;
+
+
+12.1 - Teste Funcional:
+Desenvolvidos a partir da especificação de requisitos, história de usuários e casos de uso.
+Sãos os testes definidos de acordo com os requisitos funcionais do software, que podem ser pensados/visualizados através de fluxos ou tabelas de decisões conforme as regras de negócio do nosso projeto;
+São testes que vão literalmente testar a funcionalidade das entradas, se corresponde àquilo que foi definido a função.
+
+
+12.2 - Teste Não Funcional:
+Requisições de tempo é esperado? o processo é confiável? Caso o servidor caia, a informação será armazenada? 
+Ou seja, são requisitos que o usuário não irá exatamente utilizar diretamente.
+São outras qualidades de software que devemos pensar e testar, assim, sendo baseado em desempenho, segurança, escalabilidade.
+
+12.3 - Testes Manuais
+Feitos manualmente por um analista, desenvolvedor, responsável.
+Serão executados os passos a passo necessários para que o teste seja realizado com sucesso, sempre atentos aos que o requisitos pedem.
+Costumam ter baixo custo de investimento, porém são mais lentos, e podem haver situações que possam passar despercebidos, pois dependem totalmente da interação humana.
+
+
+12.4 - Testes Automatizados
+Capaz de substituir os testes manuais, são feitos através de scripts, ferramentas como mocks e técnicas que agilizam este processo, ajudando a descobrir se o desempenho do sistema corresponde ao esperado.
+Acabam tornando-se mais confiáveis por terem o auxílio de uma ferramenta ou script.
+Pois isso, tornam-se também mais onerosos, custosos, porém, há detalhes que somente a capacidade humana poderá encontrar, então, ainda sim não haverá perfeição, neste caso, testes de usabilidades não são indicados 
+
+
+13 - Tipo de Testes Funcionais [Caixa Preta]:
+Fundamentadas em documentos de requisitos, casos de uso, histórias do usuário, Análises de valores limites, Cenários de testes, entre outros.
+Não se verifica como o sistema foi construído.
+Esses testes são baseados em entradas e saídas, sem a necessidade de olhar o código
+Exemplo, um teste de login no sistema, onde não se verifica o código, mas sim as ações realizadas e os resultados
+É usado para testar a funcionalidade do sistema, independentemente de seu código. 
+Seu objetivo principal é garantir que os requisitos sejam atendidos. 
+
+
+13.1 - Teste de Requisitos: 
+Verifica se o sistema é executado conforme o que foi especificado. 
+São realizados através da criação de condições de testes e checklists de funcionalidades.
+
+
+13.2 - Teste Exploratório:
+Busca entender como o software realmente funciona;
+Recomendado normalmente nas situações que os requisitos e especificações estejam incompletos, ou nos casos em que houver ausência de um bom escopo com base na falta de tempo em sua elaboração;
+Aprendem-se coisas que, juntamente com a experiência e a criatividade, geram novos bons testes para executar.
+
+
+13.3 - Testes end-to-end 
+Conhecido também como E2E, e consiste em verificar o comportamento do sistema como um todo, de ponta a ponta, simulando em geral a atividade que o usuário final realizaria no dia a dia, e em tese acaba sendo o último teste a ser realizado antes do nosso produto ser entregue ao ambiente de produção.
+Para possuir efetividade, o ambiente no qual o mesmo será realizado deve imitar, ser uma cópia do ambiente de produção, pois deverá interagir com banco de dados com informações reais, usar comunicação de rede, interagir com outros aplicativos, sistemas e hardwares.
+Assim, o mesmo servirá para saber se o sistema atende alguma alguma norma específica, padrão legal ou regulamentação.
+Trata-se de um teste de alto nível.
+
+
+13.4 - Teste de Usabilidade:
+Tem como objetivo observar usuários reais usando o software para descobrir problemas e pontos de melhorias
+Facilidade em utilizar, não é a beleza do aplicativo ou site.
+Aspectos de experiência do usuário perante o sistema.
+Verificando assim o quanto prazeroso poder ser a utilização do sistema.
+Um grupo de usuários reais fora do projeto que deverão utilizar o aplicativo sem direcionamento, ou pouco, e observar como será usada minha aplicação para avaliação.
+
+
+
+
+13.4.1 - Teste Alpha
+Algumas pessoas específicas dentro da empresa desenvolvedora, irão utilizar o sistema e verificar se o mesmo está funcionando como o esperado.
+A gama de usuários que farão estes teste do sistema, será muito maior, ou seja, não ficará restrito a um único usuário final, assim podendo ser realizado por 15 ou 20% de Colaboradores de uma organização, lembrando que são testes sem planejamento, abertos.
+Os casos de testes acabam sendo report´s de melhorias ou falhas.
+
+13.4.2 - Teste Beta
+Não pode ser mensurado o número de pessoas que estarão testando este sistema, funciona como um pré-lançamento, ou seja, MUITOS poderão utilizar mas ainda não todos, lembrando que são testes sem planejamento, abertos.
+Os casos de testes acabam sendo report´s de melhorias ou falhas.
+Algumas pessoas específicas dentro da empresa contratante da empresa desenvolvedora irão testar o sistema e verificar se o sistema corresponde aos requisitos.
+
+
+13.4.3 - Teste de percepção:
+5 segundos para atrair a percepção na experiência do usuário.
+fivesecondtest - site para testar os 5 segundos.
+
+
+13.4.4 - Teste de Iconografia:
+Serão testados a capacidade de compreensão dos ícones utilizados.
+
+
+13.4.5 - Teste de Microcopy: 
+Texto utilizado para representar os ícones.
+
+
+13.4.6 - Como fazer um testes de usabilidade e Como pensar seu teste?
+Sempre manter as perguntas abertas para os testes, nunca induzir o Testador, sempre deixar a vontade;
+Sinalizar que a tarefa foi realizada, concluída, para dar ideia de objetividade;
+Deve ser pensando também nos custos da programação dos testes, como: Sala, pessoas, recompensas, entre outras situaçõe;
+Avaliar se serão utilizadas pessoas internas ou externas, situações que possam dificultar ou facilitar como serão feitos os testes;
+Não dar dicas, questionar somente a experiência enquanto usa, avaliar supostas melhorias para integrar no seu sistema. 
+Preparar perguntas anteriormente ao dia, para que possa entender;
+Checklist de tarefas para o teste, para que no meio do mesmo, não aconteça esquecimentos ou falhas;
+Usar tabela SUS de usabilidade, para pegar suas observações e adicionar.
+
+
+13.5 - Teste de Regressão: 
+Técnica de teste a ser aplicada quando surgem novas versões mais recentes do software e garante que não surjam novos defeitos em componentes já analisados
+Consiste em testar as funcionalidades que estavam prontas após serem inseridas novas funcionalidades.
+O teste deve ter relação com a nova funcionalidade.
+Verificar se algo mudou em relação ao que já estava funcionando corretamente, ou seja, é voltar a testar segmentos já testados após uma mudança em outra parte do software. 
+Os testes de regressão devem ser feitos tanto no software quanto na documentação.
+Podendo ser realizado a qualquer momento, não existe um momento exato para ele ser realizado, 
+A ideia é testar se todo o restante do que não foi modificado continua funcionando, podendo ser realizado a qualquer nível, da unidade ao sistema por inteiro.
+
+
+
+13.6 - Teste de Fumaça
+Possui um cenário mais simples, para garantir que as funcionalidades mais críticas estejam em funcionamento diante do fato de falta de tempo para testar tudo novamente.
+
+
+13.7 - Teste de Sanidade
+Garantir que os cenários felizes estejam aptos, ou seja, não serão realizados todos os fluxos, apenas o ideal, aquele que sabemos que dará certo. Pode ser executado em produção.
+Subconjunto do teste de regressão e também é realizado quando não temos tempo suficiente para fazer o teste mais elaborado. 
+Nível superficial e verifica se as funcionalidades mais críticas do sistema estão conforme o esperado;
+
+
+13.8 - Teste de Tratamento de Erros: 
+Determina a capacidade do software de tratar transações incorretas.
+ Esse tipo de teste requer que o testador pense negativamente e conduza testes como: entrar com dados cadastrais impróprios, tais como preços, salários, etc., para determinar o comportamento do software na gestão desses erros. 
+Produzir um conjunto de transações contendo erros e introduzi-los no sistema para determinar se este administra os problemas.
+
+
+13.9 - Teste de Suporte Manual: 
+Verifica se os procedimentos de suporte manual estão documentados e completos, determina se as responsabilidades pelo suporte manual foram estabelecidas.
+
+
+13.10 - Teste de Interconexão: 
+Garante que a interconexão entre os softwares de aplicação funcione corretamente. Pois, softwares de aplicação costumam estar conectados com outros softwares do mesmo tipo.
+13.11 - Teste de Controle: 
+Assegura que o processamento seja realizado conforme sua intenção. 
+Entre os controles estão a validação de dados, a integridade dos arquivos, as trilhas de auditoria, o backup e a recuperação, a documentação, entre outros.
+
+
+13.12 - Teste Paralelo: 
+Comparar os resultados do sistema atual com a versão anterior determinando se os resultados do novo sistema são consistentes com o processamento do antigo sistema ou da antiga versão. 
+O teste paralelo exige que os mesmos dados de entrada rodem em duas versões da mesma aplicação. Por exemplo: caso a versão mude e os requisitos não, os dados de saída das duas versões devem ser iguais.
+
+
+13.13 - Testes de Sistema
+Tem como objetivo testar o sistema do ponto de vista do usuário final. 
+varrendo as funcionalidades em busca de falhas em relação aos objetivos originais, podendo ser através do browser.
+Baseados na documentação de especificação de comportamento do sistema, lembrando que são testes sem planejamento, abertos.
+
+13.14 - Testes de aceitação ou Requisitos
+São observados os requisitos pedidos e analisar de fato se o sistema cumpriu o pedido.
+Teste realizado pelo usuário final diferente do teste de sistema
+Realizado no mesmo nível em que acontece o teste de sistema, dentro da plataforma específica para utilização daquilo que foi projetado, lembrando que são testes sem planejamento, abertos.
+É feito antes da implantação do software,
+O cliente é quem executa este tipo de teste no ambiente de homologação, 
+Tem como objetivo verificar se o software está pronto para ser utilizado pelos usuários finais.
+Utilizando uma tabela de decisão, será testado os requisitos que especificam condições que foram especificadas.
+
+13.15 - Testes exploratórios
+Serve para conhecimento do sistema, através da exploração, acaba sendo um teste informal, o mesmo não tem um plano pré-definido, pode servir no início, porém há alguns conflitos para realizar novamente.
+
+
+13.16 - Teste de Limite ou Teste de Análise de Valor Limite Ou Partição de Equivalência:
+Consiste em testar o valor mínimo e máximo, ou claro, abaixo do mínimo e acima do máximo, pode ser de um campo, de um formulário, de uma senha.
+Essa técnica é geralmente usada para testar requisitos que exigem um intervalo de números (incluindo datas e horas);
+Análise do valor anterior + próprio + superior imediato ao limite
+Exemplo idade 20 e 49 (<19 + >=20 e <=50 + >50)
+
+
+13.17 - Teste de Estado e Transição
+Utilizado para testar a capacidade que o software tem de entrar em e sair de estados definidos através de transições válidas e inválidas
+O mesmo deve mudar seu estado para outro conforme a ação.
+Exemplo, um botão curtir que mude de cor, ou um semáforo.
+Pode ser realizado um diagrama de estado para ajudar a compreender melhor
+Consiste na transição iniciada por um evento 
+Exemplo a entrada de um valor em um campo, este evento de entrada resultará uma transição, em consequência teremos o software executando uma ação, ou seja, a mudança de estado poderá fazer esta execução.
+Exemplo: Compra de um produto em um E-Commerce.
+
+
+13.18 - Teste de Acessibilidade
+Também pode ser realizado pelo google lighthouse, consiste em saber se a aplicação poderá ser acessada por pessoas que possuam algum tipo de deficiência.
+
+
+13.19 - Testes de Caso de Uso
+Derivados naturalmente dos casos de uso.
+Associa-se ações com os atores do caso.
+Projeta-se testes para casos básicos, alternativos e de erros.
+
+
+14 - Tipo de Testes EstruturaIs:
+Realizado por um grupo de pessoas que entendem mais sobre a arquitetura do sistema, como código, pois teremos acesso ao mesmo.
+Teste unitário, unidade, componente: Teste realizados durante o desenvolvimento
+Teste de integração entre componentes: Testa como os módulos interagem entre si, um serviço confrontando com outro para avaliação do resultado.
+Teste de serviços (API)
+É usado para testar um sistema de software com base na sua arquitetura. 
+Abordagem que serve para testar cada módulo do sistema de acordo com seu código. 
+Pode ser feito pelos próprios desenvolvedores ou QAs técnicos que entendam da estrutura do projeto.
+
+
+14.1 - Testes Unitários
+Testará um método, uma função, uma classe, ou seja, testa assim uma única unidade do sistema.
+Teste realizado para embasar o próprio código, ou seja, 1+1 sempre será 2.
+Realizados em um nível muito baixo, muito próximo ao código fonte do projeto, geralmente realizado até pelos desenvolvedores para tornar mais ágil.
+Geralmente realizados de forma isolada do sistema, pois tem como objetivo assegurar a qualidade das unidades (menores parte do sistema, ou seja, métodos, funções das classes) de forma individual e não o sistema como um todo.
+Garantindo a correção e/ou funcionamento da lógica proposta funciona como esperado.
+Geralmente são menos onerosos a empresa, possuindo um custo baixo pois são realizados logo no início do projeto.
+É aplicado aos menores componentes de código, é feito pelos programadores e testa as unidades individuais: funções, objetos e componentes.
+
+
+14.2 - Testes de Integração:
+Um pouco mais complexos que os testes unitários, e também mais lentos ao ser executado, pois tem como objetivos testar as funcionalidades inteiras, o conjunto funcionando simultaneamente e entregando o resultado esperado.
+Testa como os módulos interagem entre si, um serviço confrontando com outro para avaliação do resultado.
+É feito ao término de cada iteração para validar a execução das funções referentes aos casos de uso, é feito normalmente pelo analista de sistemas.
+Valida a comunicação entre componente do sistema, ou seja, um conjunto de classes. 
+Ex: componente que gera Boleto e componente que calcula juros, e vamos testar essa integração. Geralmente feito pelo programador.
+Ainda realizado antes do sistema estar concluído, a medida que os componentes vão ficando prontos;
+Acontece após a verificação dos testes unitários.
+
+
+14.3 - Teste Estático (Análise estática de código): 
+O código não é executado, é apenas a análise visual do mesmo, procurando falhas e melhorias sem “rodá-lo”, como boas práticas de programação.
+
+
+14.4 - Teste de Execução: 
+Verifica os tempos de resposta, de processamento e o desempenho (performance), avaliando o comportamento do software no ambiente de produção e verificando se as premissas de desempenho são atendidas. 
+Em um sistema que possui dez módulos diferentes e que foi desenvolvido por equipes diferentes, o teste de execução avalia o sistema como um todo. 
+É como se o teste de execução fosse um “play” no sistema.
+
+
+14.5 - Teste de Estresse: 
+Avalia o comportamento do software sob condições críticas, tais como restrições significativas de memória, espaço em disco, etc., ou seja, coloca o software sob condições mínimas de operação.
+verifica a performance de um sistema quando é submetido a cargas que estão no limite ou acima do limite especificado inicialmente.
+
+
+14.6 - Teste de Recuperação: 
+A recuperação é a capacidade de reiniciar operações após a perda da integridade de uma aplicação como, por exemplo: Ao desligar o computador, queda de energia elétrica, entre outros. O
+Garante a continuidade das operações após um desastre.
+
+
+14.7 - Teste de Operação: 
+Avalia o processo e sua execução, são desenhados para estabelecer se o sistema é executável durante a operação normal, 
+É um tipo de teste muito específico, depende do software a ser testado, um exemplo é o software de “Call Center”.
+
+
+14.8 - Teste de Conformidade: 
+Verifica se o software foi desenvolvido de acordo com padrões, normas, procedimentos e guias de TI.
+
+
+14.9 - Teste de Segurança: 
+Avalia a adequação dos procedimentos de proteção e as contramedidas projetadas, para garantir a confidencialidade das informações e a proteção dos dados contra o acesso não autorizado de terceiros.
+Não exatamente será realizado pelo time de QA, embora possa ser acompanhado, e basicamente vai procurar entender o quanto o sistema é seguro contra ataques entre outras situações voltadas ao assunto.
+Validação da proteção do sistema contra invasões e acessos não autorizados.
+
+
+14.10 - Testes de desempenho / Performance
+Testa a performance do sistema ou aplicação, por exemplo um site pode ser testado através da extensão do google que se chama google lighthouse, e o mesmo analisará todas as métricas do sistema.
+Conjunto de testes que irão avaliar os seguintes estados do software: Carga, capacidade, stress
+Dentro de uma situação corriqueira e do dia a dia, irá validar o tempo de resposta para alguma determinada operação, para uma determinada ação de acordo com a expectativa do usuário.
+
+
+14.11 - Teste de Stress:
+Validar o sistema em condições extremas, podendo também ser simulado pelo JMetter, elevando o limite ao máximo para ver se ele suporta tantas conexões, consultas e análises ao mesmo tempo.
+
+
+14.12 - Testes de Carga:
+ concentra na capacidade de um sistema em lidar com níveis crescentes de cargas, controle de usuários ou processos concorrentes.
+Tem como objetivo verificar o desempenho de um sistema quando ele é submetido a cargas variáveis de usuários ou transações.
+14.12.1 - Teste de Estresse: 
+Capacidade de um sistema em lidar com picos de cargas que estão no limite ou além dos limites das cargas de trabalhas previstas ou especificadas e também para avaliar a capacidade de um sistema em lidar com disponibilidade de recursos reduzido
+
+
+14.12.2 - Teste de Escalabilidade: 
+Capacidade de um sistema em atender a requisitos futuros de eficiência, que podem estar além dos requisitos exigidos atualmente, ou seja, determinar a capacidade de expansão do sistema sem violar os requisitos de performance ou de falhas
+
+
+14.12.3 - Teste de Pico: 
+Capacidade de um sistema em responder corretamente a rajadas súbitas de picos de cargas e retornar depois a um estável
+
+
+14.12.4 - Teste de Resistência: 
+Estabilidade do sistema ao longo de um período específico, para ver a degradação de performance e/ou causar falhas
+
+
+14.12.5 - Teste de Concorrência: 
+Impacto das situações em que ações específicas ocorrem simultaneamente
+
+
+14.12.6 - Teste de Capacidade: 
+Quantos usuário e/ou transações um sistema suportará atendendo aos objetivos estabelecidos de performance
+Parecido com o de carga, tem como objetivo identificar os limites da aplicação, ou seja, quantos usuários simultâneos ou chamadas por segundo a aplicação é capaz de suportar dentro dos parâmetros de qualidade definidos.
+
+
+15 - Estágios ou Níveis de Teste (Quando Testar?): 
+Quando o teste entra em ação, podemos então estruturar de certa forma assim uma boa parte das etapas e processos de criação de um sistema:
+Requisitos:
+Informações referentes às necessidades do cliente para desenvolvimento do sistema.
+Criação de Cenários de Testes de Aceitação:
+Cenários primordiais que autorizam que o meu sistema funcione, são dependentes do levantamento de requisitos.
+Especificação do que será desenvolvido:
+API, interface de programação da aplicação, todas as operações que devem ser realizadas.
+Criação dos cenários de Testes de Sistema, baseados na especificação.
+Arquitetura de Sistema:
+Tecnologias que serão utilizadas.
+Codificação:
+Programação.
+Testes de Unidade e Testes de Integração.
+É a dimensão do teste que determina a fase do desenvolvimento se aplica um determinado teste:
+Teste de Integração ou Iteração, Teste de Sistema, Teste de Aceitação;
+
+16 - Ciclo do Processo e Vida do Teste:
+Etapas do processo de criação de um software: 
+Comunica → Planeja → Projeta/Modela → Executa/constrói → Entrega
+Para se obter resultados positivos nos projetos de testes é necessário que o mesmo inicie desde a especificação dos requisitos do sistema a ser implementado, ou seja, tão logo comece o projeto de desenvolvimento do software inicia-se também em conjunto o projeto de testes de software.
+Concepção
+Planejamento:
+O que vai ser testado, em quanto tempo e em que momento os testes serão interrompidos. 
+Preparação: 
+O objetivo é preparar toda a estrutura do ambiente de testes como: equipamentos, configuração de hardware e softwares usados (sistemas operacionais, browsers, etc.), criação da massa de dados de teste, pessoal, ferramentas de automação, entre outros. 
+Elaboração
+Especificação 
+A atividade principal é elaborar e revisar os cenários e roteiros de testes. 
+Construção:
+Modelagem dos testes;
+Preparação do ambiente;
+Execução:
+Executa-se os testes planejados e registra-se os resultados obtidos 
+Análise dos resultados;
+Transição:
+Entrega: 
+É onde arquiva-se toda a documentação e descreve-se todas as ocorrências do projeto relevantes para a melhoria do processo.
+
+
+17 - Tipos de requisitos:
+Usuário:
+É uma descrição detalhada em linguagem natural, juntamente com diagramas dos serviços que o sistema fornece e suas restrições operacionais. 
+Geralmente é desenvolvido por usuários finais.
+Sistema
+É um documento estruturado que detalha as descrições das funções, serviços e restrições operacionais do sistema.
+Funcional:
+ Ele descreve os serviços do sistema, como o sistema deve reagir a entradas específicas e como o sistema deve se comportar em determinadas situações.
+Não Funcional:
+Ele descreve os atributos do sistema.
+Domínio:
+Requisitos que surgem do domínio do aplicativo e que refletem as características desse domínio.
+Podem ser especificações funcionais ou não funcionais.
+
+
+18 - User Stories: 
+Descreve claramente uma funcionalidade que tem valor para o usuário simples e claramente.
+Como [Quem vai utilizar?]
+Eu quero [ Que ação quero executar?]
+Para [Por que vou utilizar?]
+Um bom U.S. deve possuir tais características:
+Independente. 
+A independência entre as User Stories facilita a priorização e a estimativa.
+Negociável. 
+Pode ser renegociada para responder às mudanças.
+Valiosa. 
+Deve trazer valor ao negócio do usuário.
+Estimável: 
+Deve ser possível determinar o tempo necessário para entregá-la.
+Pequena: 
+Deve caber em um sprint.
+Testável: 
+O sucesso no teste é que vai garantir que a User Story foi desenvolvida corretamente.
+
+
+19 - Critérios de Aceitação:
+A necessidade de existir os campos para que a regra de negócio possa ser exercida, exemplo, um campo de e-mail, um campo de login. 
+São situações que devem acontecer para que meu sistema responda aos critérios obrigatórios do sistema, 
+Ex: bloquear senha caso haja um número de erros, possuir campos obrigatórios, redirecionar página caso o login seja bem sucedido.
+São valores máximos e mínimos aceitáveis para uma funcionalidade.
+Podem ser funcionais ou não funcionais;
+Têm que ser objetivos e não haver pré julgamentos.
+É uma lista de critérios que precisam ser alcançados para que a U.S atenda os requisitos do usuário e seja aceita pelo Product Owner. 
+Os critérios de aceitação contém informações adicionais que não foram inseridas nas U.S para não poluir o corpo principal do texto.
+Objetivo:
+Definir limites para as U.S.
+Ajudar o P.O. a detalhar em alto nível o que é necessário para entregar valor ao cliente.
+Ajudar o time a entender melhor o objetivo da U.S.
+Ajudar programadores e testadores a planejarem os testes.
+Informar ao programador quando parar de adicionar funcionalidades à U.S.
+Bons critérios de aceitação:
+São escritos com menor nível de detalhamento
+São independente de implementação
+Definem o que fazer e não como fazer
+Podem ser definidos por regras, funcionalidades, desejos, opções
+	
+20 - Regra de Negócio: 
+Se isso, faça aquilo
+Condições a serem atendidas para o pleno funcionamento do sistema / aplicação.
+Situação que torna possível e viável uma ação permissível.
+Exemplo, Clientes com saldo positivo podem realizar transferências bancárias, o saldo deve ser subtraído da conta de origem e adicionado na conta de destino.
+Tudo que acontece no backend, é critério para que uma ação aconteça dentro do sistema. Por exemplo, é necessário realizar um cadastro para realizar o login.
+
+
+21 - Verificação x Validação:
+Verificação
+Entender se os requisitos mais amplos foram atendidos, conforme especificação, se estão sendo construídos da forma correta.
+Validação
+Entender se as regras de negócios como expectativa e utilidade estão sendo construídas corretamente.
+
+22 - Defeitos x Erros x Falhas → (Erro > Falha > Defeito (Bug))
+Quando o sistema não está de acordo com a especificação;
+Faz algo que não deveria e/ou especificado;
+Não faz algo, mas também não está especificado;
+Usabilidade ruim;
+Performance ruim;
+Segurança ruim;
+Não possui a representação da necessidade do cliente;
+Defeitos (Bug): 
+É o resultado de um erro encontrado num código ou num documento
+Imperfeições ou deficiência relacionados aos requerimentos e especificações do produto que se… 
+É um erro em um código ou documento. 
+Geralmente no backend.
+É um erro de lógica na programação de um determinado software.
+Tudo que acontece no sistema diferentemente do que foi especificado, programado como ser o ritual ideal
+Evidente e visível, e há a materialização do erro, ou seja, foi programado, projetado, escrito
+Erros: 
+Ação humana enquanto compreensão. É um engano cometido por seres humanos;
+Ação humana que produz um resultado incorreto.
+Motivos: Pressão por tempo, falha humana, inexperiência ou imperícia, falta de comunicação, complexidade do sistema ou tecnologia, condições de ambientes inesperadas.
+Falhas: 
+Evento no qual o sistema não executa uma função sob limites específicos.
+É a manifestação deste defeito ou mais, geralmente é visível, acontecendo no front-end.
+A falha ocasiona um BUG, que na mão do Usuário é um DEFEITO.
+Tudo que for visível para o usuário.
+Resultado do defeito/bug, ou seja, quando após um erro, aconteceu um defeito, então a falha foi perceptível pois houve execução dos mesmos.
+
+
+23 - Report e Relatório de Bug
+Deve ser preciso, sucinto, e explicativo. 
+Devem ser reportados imediatamente. 
+Tentar reproduzir o mesmo ao menos 3x, assim, deixar claro se realmente acontece o tempo todo ou somente de vez em quando. 
+Testar o bug em outras plataformas e outros navegadores.
+Os bugs podem ser reportados pelo bugtracker, Jira, entre outras ferramentas, incluindo uma tabela do excel
+Deve conter algumas características como:
+Título, sucintamente, resumidamente deve conter o erro já.
+Passo a passo da reprodução, assim, se for o caso de um login, deve conter o login, a senha utilizada, todo o detalhamento para facilitar a vida do time e do desenvolvedor.
+Resultado esperado, assim, o que deveria acontecer e não aconteceu.
+Versão, exemplo, 1.0
+Plataforma, o sistema operacional utilizado.
+Navegador, pois pode haver diferença entre navegadores,
+Criticidade, o quanto aquele bug impacta no sistema.
+Status, ou seja, se é um bug novo, em correção, ou corrigido.
+Evidência, a evidência do bug outrora registrada.
+
+
+24 - Severidade dos Bugs
+É definido pelo QA
+Crítico / Blocker: Quando bloqueia e a possibilidade de teste nem é possível ser realizada, pode envolver segurança, ou que possa impedir completamente o lançamento do sistema.
+Grave: Geralmente quando a funcionalidade específica não funciona corretamente.
+Moderada: Quando alguma funcionalidade não atende a todos os requisitos, mas não chega a ser tão grave.
+Pequena: Erros ortográficos, mas nada que afete explicitamente para que impacte a utilização do sistema
+
+
+25 - Prioridade de Bug´s
+Tudo será conversado com o gerente do projeto, os casos podem ser outros, dependem da situação que está sendo vivenciado, mas em tese seguirá o plano abaixo.
+Alta: Críticos / Blocker
+Média: Graves e Moderados
+Baixa: Pequenos
+
+
+
+
+26 - Métricas
+Total de defeitos no sistema, os Bugs
+Total de defeitos em produção
+Total de defeitos removidos
+Total médio de reparos
+Quantidade de testes automatizados
+Cobertura de código
+Satisfação do usuário
+
+27 - Pirâmide de Testes
+A pirâmide de teste serve para exemplificar a visualização em camadas de quais ou quando usaremos a automação de testes, assim, quanto mais próximo da base, mais rápidos e mais baratos e maior serão os testes em unidades, assim como mais próximo do topo, serão mais lentos e mais onerosos e também maior a quantidade dos testes E2E.
+A base é composta pelos testes de menor parte testável de uma aplicação, aqueles que testarão classes ou funções ainda dentro do código, ou seja, os testes de unidade.
+No meio teremos os testes de integração, que testam como diferentes módulos do sistema interagem entre si, como os de comunicação entre serviços, comunicação entre bancos de dados e etc.
+No topo, haverá os testes de ponta a ponta que buscam testar todo o fluxo de funcionamento da aplicação.
+Testes UI - Mais caros e lentos (Topo)
+Serviços - Nem tão caros e nem tão lentos (Meio)
+Unitários - Mais baratos e rápidos (Base)
+Verificação e validação de teste, são técnicas fundamentais para identificar se um software possui defeitos e está de acordo com o especificado. (Anderson Bastos).
+Esse modelo em “V”, é baseado em etapas do ciclo de vida de desenvolvimento de software.
+
+
+Por fim, concluímos que a pirâmide de teste possui vantagens, como agilidade na execução dos testes, menor tempo de construção do teste, não há necessidade da criação de ambientes, baixa manutenção de scripts, não há necessidade de licença da ferramenta.
+
+
+
+
+28 - Técnicas de TDD x BDD x ATDD:
+
+
+
+
+Test Driven Development
+Desenvolvimento orientado por teste
+Desenvolvimento orientado por testes, consiste em verificar o comportamento das menores unidades em sua aplicação. Podendo ser uma função, classe ou um método de classes.
+Esqueleto do Teste → Teste → Funcionalidade
+Diagrama abaixo exemplifica:
+
+Behavior Driven Development 
+Desenvolvimento guiado por comportamento,
+Desenvolvimento orientado ao comportamento, ajuda a simplificar a comunicação utilizando cenários baseados em comportamento do cliente.
+
+
+Técnica que faz uso de testes automatizados (ou manuais) para guiar o desenvolvimento de novas funcionalidades ou correção de bugs.
+São testes que utiliza-se a técnica guiada pelo provável comportamento do usuário, através da semântica abaixo podemos criar a Estória do usuário, que possuem 3 pilares:
+Pré Requisito  serão indicados. 
+Caso de teste - situação:
+Eu… ou Como “Alguém”...: Quem quer?
+Quero… : O que eu quero?
+Para que … ou Para… ou Por que…
+Para quem quero?
+Construção do Cenário de Teste: 
+Dado que (Desejo)…E…
+Quais são as pré condições que devem ser verdadeiras para que eu execute o teste?
+Quando …E… (Ação)
+Qual ação será executada no sistema que fornecerá o resultado validado?
+Então… E…(Resultado Esperado) 
+De acordo com a ação disparada qual o resultado esperado?
+Diagrama abaixo exemplifica:
+Dado → E → Quando → Então
+
+ATDD
+Desenvolvimento orientado por testes de aceite
+Diagrama abaixo exemplifica:
+.
+
+
+Cada teste deve lidar apenas com:
+Um arrange - cenário a ser testado, o keyword Dado.
+Uma action - um método para testar, o keyword Quando,
+Um assert - Uma chamada para um método de verificação, o keyword Então.
+
+
+
+29 - Syllabus - Estudos para certificação em testes
+
+29.1 - Equívocos comum dos testes:
+É que ele se concentra inteiramente em:
+Verificação de requisitos;
+Histórias de usuários ou outras especificações. 
+OBS: Embora o teste envolve verificar se o sistema atende aos requisitos especificados, ele também contempla a validação, que está verificando se o sistema atenderá às necessidades do usuário e stakeholders em seu(s) ambiente(s) operacional(is)
+
+
+
+
+	Parabéns, chegamos ao final do estudos sobre testes, lembrando que não devemos ficar limitados a este documento, procure novas visões, é importante sempre refrescar o conhecimento.
+
+
+	Próximo Passo : Metodologias Ágeis e outros assunto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

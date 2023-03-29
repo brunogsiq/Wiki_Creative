@@ -59,4 +59,7 @@ cy.xpath
 
 cy.get
     Para elemento com ID
+
+cy.clear()
+    Para limpar um determinado campo selecionado
 */

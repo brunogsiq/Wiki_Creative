@@ -27,4 +27,6 @@
                         "cypress-wait-until": "^1.7.2",
                         "cypress-xpath": "^2.0.1"
                     },
+
+Para saber mais www.cypress.io
 */

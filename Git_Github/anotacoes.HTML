@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Git - Github</title>
+	</head>
+	<body>
+		<script src="Pictures/Iniciando_Repositório.png"></script>
+	</body>
+</html>
+
+/*
+O que é versionamento? : É uma maneira de guardar versões, ou seja, como se guardassem fotos, o instante perfeito de um arquivo, antes mesmo de uma modificação, ou seja, a versão anterior.
+GIT e GITHUB - CONCEITOS
+*GIT - é um sistema de versionamento, controle de versão, “máquina do tempo”, pode não ser a melhor escolha para todos, mas é uma escolha para diversas possibilidades de controle. É um sistema de controle de versão de arquivos, onde diversas pessoas poderão contribuir ao mesmo tempo para um projeto hospedado, editando, criando sem riscos de serem sobrescritos, padronizando uma versão para que possam haver alterações sem perigo, havendo diversos “snapshots” do seu projeto, tendo como função, criar, compartilhar, versionar projetos.
+Quem usa o Git? : Já são 36 milhões de usuários.
+*GITHUB - É um serviço web, de repositório de arquivos, que oferece funções extras ao git, como a hospedagem dos projetos, frameworks, bibliotecas sobre desenvolvimento opensource, dando oportunidade de também ser visualizados códigos não privados e que também podem ser melhorados, contribuídos por outros desenvolvedores, tendo como função, hospedar projeto pessoais e empresariais;
+*COMO OS ARQUIVOS SÃO ORGANIZADOS NO REPOSITÓRIO:
+Commits, Branches e Repositório.
+REPOSITÓRIO: Quando fala-se em repositório, deve-se imagina que é como se fosse uma pasta, onde se pode gerir os arquivos que estão dentro, ou seja, pode se ter arquivos de diversos tipos, removê-los, adicioná-los, renomêá-los, gerir como necessário, inclusive ter repositório dentro de repositório;
+BRANCHES: Resumidamente falando, é um ramo, especificando um fluxo de desenvolvimento do seu repositório. Este fluxo pode ter um número ilimitado de desenvolvedores, seguindo seus fluxos de desenvolvimento, contendo mais de uma branch em um respositório.
+Commits: São assinaturas, ou seja, uma maneira de controlar o que foi feito, por quem foi feito, quando, e consequentemente dizer ao git, “lembre-se disto”.
+FLUXO BÁSICO DE DESENVOLVIMENTO DE UM REPOSITÓRIO:
+1 - Cria-se o repositório;
+2 - Desenvolve, trabalha-se em cima dos arquivos;
+3 - Adiciona-se ao pré commit, área de stage.
+4 - Verifica-se as alterações antes de confirmações;
+5 - Confirma-se dando nome a elas;
+6 - Passos 2 e 3 e 4 e 5 continuamente...
+*ÁREAS DE DESENVOLVIMENTO DO GIT:
+STAGE: Área de verificação, área pré-commit, ou seja, fala-se ao git, que foi adicionado algo, e que deve-se prestar atenção;
+*CONFIGURANDO O GIT:
+Cria-se um perfil no github, clona-se o projeto para máquina.
+
+
+*OBJETOS INTERNOS DO GIT
+BLOBS e TREES e COMMITS
+BLOBS - Contém metadados dos arquivos, tamanho do objeto entre outros;
+TREES - Armazena blobs, contém metadados também, que também, possui um SHA1, que é um código hexadecimal de segurança;
+COMMIT - Objeto que dá sentido à alteração, e aponta para mensagem o autor, parente e árvore do projeto.
+*RESOLVENDO CONFLITOS NO GITHUB
+CONFLITOS DE MERGE: Quando o GitHub tentar juntar duas alterações que ocorreram na mesma linha, não é feito nenhuma alteração drástica, não infere, devido o conflito de duas pessoas que mexeram, deverá ser consertado, corrigido manualmente, incluindo qual é a versão correta.
+RESOLVENDO CONFLITO DE REPOSITÓRIOS (NOMES)
+git pull origin master
+*DICAS DE PROJETOS PARA CRIAR SEU PORTFÓLIO:
+Exemplos: Login em sites, Relatórios, Aplicativos mobille para o dia-a-dia, saúde, finanças, organização, e lembrar de documentar tudo no README.md e inserir no site de repositórios;
+*PASSO A PASSO DE EXEMPLO PARA TRABALHOS INDIVIDUAIS:
+1- Após realização de cadastro e configuração do perfil no GitHub, cria-se um repositório no site.
+2 - Dentro da pasta onde utilizará o git, abre-se o terminal com o botão direito do mouse:
+git bash here
+3 - Clona-se o projeto:
+git clone "url_do_projeto"
+4 - Adiciona pasta .git oculta no remoto:
+git add .
+5 - Obrigatoriedade de realização do comentário antes do envio:
+git commit -m "msg_entre_aspas"
+6 - Transferência para o repositório:
+git push 
+7- Se houver alguma manipulação no arquivo, novamente se utiliza o comando:
+git add nome_arquivo
+8- Comenta-se para poder upar para o repositório:
+git commit -m "msg_entre_aspas"
+
+
+
+*PASSO A PASSO DE EXEMPLO PARA TRABALHOS EM EQUIPE:
+1 - Pedir incorporação do código a árvore principal do proejto: 
+pull request
+git checkout -b nome_da_branch
+3 - Adicionar a pasta no remoto:
+git add .
+4 - Obrigatoriedade de realização do comentário antes do envio:
+git commit -m "comentarioentreaspas"
+5 - Transferência para o repositório:
+git push
+6 - Atualizar se necessário as atualizações de terceiros :
+git pull
+Alguns comandos de terminal:
+clear ou cls	
+Limpa todo conteúdo.
+cd nomedapasta 
+Muda o diretório para…
+cd. 
+Se mantém na pasta
+cd.. 
+cd + tab 
+Segue para pasta anterior
+Autocompleta
+copy nome_arq novonome_arq 
+Duplica arquivo criando uma cópia
+dir (Windows)- ls (Linux) 
+Listas Pastas
+del nomepasta
+Deleta arquivo dentro da pasta, não a pasta
+echo - ex: echo Hello!
+ 
+echo “mensagem” sinal_de_maior “nome_arquivo” 
+Printa mensagem na tela
+
+Cria um txt com a “mensagem” sinal_de_maior nome_arquivo
+help nomecomando 
+Personalização do comando que se deseja
+mkdir nomepasta
+
+mkdir nome\ da\ pasta\
+
+mkdir “nomepasta” 
+
+mkdir -p nomepasta/nomepasta 
+
+mkdir .nomedapasta 
+
+mkdir README.md 
+Fazer uma nova pasta
+
+Fazer pasta com espaço
+
+Fazer pasta com espaço. UTILIZAÇÃO +Comum
+
+Fazer várias pastas de uma vez
+
+Fazer pasta oculta
+
+cria arquivo exemplo Markdown
+mv nome_arquivo ./nome_pasta
+
+
+mv nome_Arquivo nome_pasta 
+
+
+mv nome.txt nome.md
+Move arquivo para pasta
+
+
+Move arquivo para pasta
+
+
+Muda nome do arquivo
+nome_do_programa - - version 
+Apresenta a versão do programa desejado.
+pwd 
+Saber onde se encontra dentro dos diretórios
+ls nomepasta 
+
+ls.. 
+ls -a 
+
+ls -l 
+
+ls -la
+
+rename nomearquivo
+  
+
+
+rmdir nomepasta
+rm+Tab 
+tree 
+ \ (barra), separa diretório; 
+
+
+
+Listar arquivos dentro da pasta
+
+Listar arquivos dentro da pasta acima
+Lista repositório oculto no diretório
+
+Lista arquivos em forma de lista
+
+Lista arquivos completamente
+Renomeia arquivo
+
+
+Remove arquivo de dentro da pasta
+Remove completando o que eu desejo
+Mostra pasta e subpastas
+sinal_de_maior(maior) convite a escreve comando;
+
+
+
+
+
+
+
+
+
+
+
+Alguns comandos de terminal GIT:
+
+
+
+
+
+
+
+git bash here
+Iinicia terminal
+
+nome_do_arquivo.md
+
+(Não txt) Forma mais humana de ser escrever um arquivo html, que tem o nome de markdown.
+
+git pull origin master
+
+Conflito de nomes no repositório //Obtém as alterações na branch principal // Usado para trazer modificações relevantes que estão hospedadas, Projeto com mais de uma pessoa ou máquina, será necessário realizar a sincronia.
+
+git clone url_do_repositorio
+
+Clona projeto para dentro da máquina, virá igual ao projeto no repositório.
+
+git init
+
+Cria a pasta .git(que fica oculta), inicializando um repositório na pasta em questão.
+
+git add .
+
+
+
+
+
+git add *
+
+
+
+git add -A
+
+Adiciona arquivo para preparação, este não adiciona diretamente no repositório, mas sim, prepara revisão. // Adiciona tudo que está dentro da pasta para depois se realizado upload com o push”, exemplo, se houver vários .PNG, .JPG .mp3.
+
+Adiciona arquivos novos e modificados para sessão de stage do repositório atual, para aí sim poder ser realizado um commit // Adicionar todo card, com diversos tipos de extensões. 
+
+Adiciona todos os arquivos novos, modificados e deletados.
+
+git status
+
+Exibe o status de repositório atual, status que o arquivo se encontra, comittado ou não.
+git log
+Irá dizer o que falta ainda fazer por exemplo, como a falta de um commit.
+
+git commit -m "comentario_entre" 
+
+git commit - -amend
+
+Pega todos os arquivos que estão no index, e cria uma revisão visível a todos com o comentário, ou seja, uma assinatura modifica a mensagem mais recente (último commit). 
+
+
+git branch nome_da_branch
+
+git branch
+
+git branch -r
+
+git branch -D nombranchquero_apagar
+
+git merge nomebrachquealterei
+
+git checkout nome_da_branch
+
+git checkout -b nomenovo_da_branch
+
+git checkout nome_arquivo
+Cria nova branch
+
+Lista os repositórios que estão no meu computador
+
+Mostra repositórios do github que não estão no repositório local
+
+Apaga a branch que eu desejo.
+
+Leva as alterações da branch  alterada para a master..
+
+Muda para a branch criada // Alterna entre branch´s.
+
+Cria e muda para nova branch.
+
+Desfazer alteração no arquivo caso tenha sido Por/Sem querer.
+
+git config -- list
+
+Trás a lista de todas as configurações de todas as configurações atreladas ao github
+
+git push 
+ou 
+git push origin master 
+
+Usa-se para publicar todos as alterações, usado após commit para o github, existe possibilidade de ser pedido a senha do usuário/projeto
+
+git restore nome_arquivo
+
+Para voltar uma alteração no tempo do arquivo
+
+git remote add origin Link_rep_servidor
+
+git remote -v
+
+Adiciona a origem de onde está enviando os arquivos
+
+Lista os repositórios remotos cadastrados
+
+
+cat
+Mostra o que está dentro do arquivo
+git .nome_do_arquivo_oculto
+Cria um arquivo oculto.
+
+
+
+
+
+
+
+
+
+
+O que é Branch: 
+	De certa forma é uma cópia do seu repositório, embora, não faça alteração no seu repositório no GITHUB. A Branch padrão, pode ser chamada de “master”, mas também pode ser chamada de main. 
+
+
+______________________________________________________________________________________________
+______________________________________________________________________________________________
+As anotações que serão inseridas a partir deste parágrafo, são conhecimentos adquiridos a partir do curso do alura.
+
+
+Git, é um sistema de controle de versões, que ajuda a manter um histório de de alterações, e também ter controle sobre estas alterações.
+
+
+git rm –cached NOME_ARQUIVO – Para informar ao git que posso parar de controlar determinado arquivo, caso tenha sido excluído de uma pasta por exemplo.
+git status – Vai nos apresentar:
+Head – Onde os git o colocou e o estado atual
+Working tree – Local exato onde os arquivos estão sendo editados.
+Index – Local onde o git armazena o que será commitado, o local entre a working tree e o repositório git.
+git log – Histórico de alterações e o que já houve dentro do projeto.
+Hash – identificação do commit, ou seja, não há duas identificações iguais.
+Outras ramificações do git log são:
+git log -- oneline, log com uma única linha. 
+git log -p, visualiza com as alterações.
+Há mais inúmeros outras possibilidades (www.devhints.io/git-log)
+git init –bare, com este comando, nosso repositório irá conter somente os arquivos com alterações.  
+git branch NOME_ARQUIVO, crio uma nova branch de desenvolvimento.
+git checkout NOME_ARQUIVO, mudo para a linha de desenvolvimento crianda acima ou outra criada anteriormente.
+git checkout -b NOME_ARQUIVO, cria uma nova branch e já leva para este local. Ex: master>titulo
+*/
