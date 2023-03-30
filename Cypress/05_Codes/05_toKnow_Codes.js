@@ -62,4 +62,7 @@ cy.get
 
 cy.clear()
     Para limpar um determinado campo selecionado
+
+cy.window()
+    Consigo manipular alertas por exemplo.
 */
