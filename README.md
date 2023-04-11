@@ -2,20 +2,21 @@
 
 ## <h1 align="center">:fire::ghost: Objetivo 👻:fire:</h1><br>
 <h2>
-<ul>
-<li>Construção de arquivos para busca de conhecimento;</li>
-<li>Facilidade e Rápido Acesso as informações;</li>
-<li>Ganho de tempo evitando pesquisas através do navegador;</li>
-<li>Ganho de foco utilizando o VS_Code;</li>
-<li>Repositório compartilhado para clone de Interessados;</li>
-<li>Colocar em prática conhecimentos adquiridos;</li>
+    <ul>
+        <li>Construção de arquivos para busca de conhecimento;</li>
+        <li>Facilidade e Rápido Acesso as informações;</li>
+        <li>Ganho de tempo evitando pesquisas através do navegador;</li>
+        <li>Ganho de foco utilizando o VS_Code;</li>
+        <li>Repositório compartilhado para clone de Interessados;</li>
+        <li>Colocar em prática conhecimentos adquiridos;</li>
+    </ul>
 </h2>
-</br></br>
+</br>
 
-##<h1 align="center">:fire::ghost: Da Concepção do Projeto à Qualidade e Teste de Software 👻:fire:</h1><br>
+## <h1 align="center">:fire:Da Concepção do Projeto à Qualidade e Teste de Software👻:fire:</h1><br>
 <div align="left">
 
-<h3>Desenvolvimento:</h3>
+# <h3>:fire: Desenvolvimento :ghost:</h3>
 <h4>
     <li>C;</li>
     <li>Html;</li>
@@ -25,13 +26,15 @@
     <li>Python;</li>
     <li>Ruby;</li>
 </h4>
-<h3>Qualidade e Testes de Software:</h3>
+
+# <h3>:fire: Qualidade e Testes de Software :ghost:</h3>
 <h4>
     <li>Cypress;</li>
     <li>Qualidade e Teste de Software;</li>
     <li>Robot Framework;</li>
 </h4>
-<h3>Versionamento de Código e Outras Dicas:</h3>
+
+# <h3>:fire: Versionamento de Código e Outras Dicas :ghost:</h3>
 <h4>
     <li>Git e Github;</li>
     <li>Visual Studio Code;</li>
