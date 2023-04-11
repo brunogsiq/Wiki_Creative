@@ -13,7 +13,7 @@
 </h2>
 </br>
 
-## <h1 align="center">:fire:Da Concepção do Projeto à Qualidade e Teste de Software👻:fire:</h1><br>
+## <h1 align="center">:fire:Da Concepção do Projeto ao Teste de Software👻:fire:</h1><br>
 <div align="left">
 
 # <h3>:fire: Desenvolvimento :ghost:</h3>
