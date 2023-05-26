@@ -26,7 +26,4 @@ Inteligências Artificiais:
 Designer:
     FreePick: Baixar imagens PSD;
     Photopea: Edição on line;
-
-
-
 */
