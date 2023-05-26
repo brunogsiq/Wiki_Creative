@@ -39,4 +39,11 @@
         Latência;
         Bytes;
         Utilização de recursos;
+
+    Frameworks:
+        JMeter:
+            p/ adicionar massa de dados, clicar na opção Test Plan com botão direito, 
+                add > config element > csv data set config > filename > browser
+
+            Na seção Thread group, é realizada toda configuração de carga do teste.
 */
