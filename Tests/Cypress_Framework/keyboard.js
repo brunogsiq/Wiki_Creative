@@ -1,0 +1,3 @@
+/*
+      .type('Cypress.io{enter}')
+*/

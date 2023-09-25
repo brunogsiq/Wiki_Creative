@@ -15,7 +15,7 @@ Utilizando o seguinte comando:
             npm install cypress --save -include=dev
 
 Para verificar a versão do mesmo, será digitado no prompt de comando o seguinte comando
-    npm - v
+    npm -v
         Para verificação do node package manager
     node -v 
         Para verificação do node.js
