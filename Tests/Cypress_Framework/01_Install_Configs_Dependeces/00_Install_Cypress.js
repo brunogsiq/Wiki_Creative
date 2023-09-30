@@ -30,4 +30,10 @@ Para rodar nossos testes utilizando a interface gráfica do do cypress será uti
 
 Para rodar e executar os testes do cypress em backgroud", o comando utilizado será:
     npx cypress run
+
+Possíveis erros e suas correções:
+    Erro:
+        Could not find a Cypress configuration file in this folder:
+    Correçâo:
+        npx cypress open --config-file theNewCypressConfigPath
     */
