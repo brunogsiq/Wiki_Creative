@@ -1,3 +1,0 @@
-/*
-    .click( {multiple:true} )
-*/
