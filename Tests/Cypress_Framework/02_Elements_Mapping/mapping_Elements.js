@@ -1,4 +1,0 @@
-/*
-    Atributos
-        [name=formComidaFavorita]
-*/
