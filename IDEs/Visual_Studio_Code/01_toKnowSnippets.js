@@ -11,5 +11,4 @@ Config > Snippets > Tipo Ling. > Add
 		"description": "Adicionar autocomplete de comandos cypress"
 	}
 }
-
 */
