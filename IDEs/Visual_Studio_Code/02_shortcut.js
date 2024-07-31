@@ -7,4 +7,6 @@
     Alt + seta : Muda posição da linha
     Ctrl + Shift + n : abrir nova pasta
     Shift + Alt + f: Identação 
+    cTRL + ; : Comentar várias linhas
+    alt + shift + a: Comentário longo
 */
